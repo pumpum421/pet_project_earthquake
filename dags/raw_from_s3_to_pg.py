@@ -72,7 +72,7 @@ def get_and_transfer_raw_data_to_ods_pg(**context):
             PORT 5432,
             DATABASE postgres,
             USER 'postgres',
-            PASSWORD 'postgres'
+            PASSWORD '{PASSWORD}'
         );
 
         ATTACH '' AS dwh_postgres_db (TYPE postgres, SECRET dwh_postgres);
